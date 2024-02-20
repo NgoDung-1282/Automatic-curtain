@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"nema17\startup_stm32f103xb.o"
+"nema17\main.o"
+"nema17\stm32f1xx_it.o"
+"nema17\stm32f1xx_hal_msp.o"
+"nema17\stm32f1xx_hal_gpio_ex.o"
+"nema17\stm32f1xx_hal_adc.o"
+"nema17\stm32f1xx_hal_adc_ex.o"
+"nema17\stm32f1xx_hal.o"
+"nema17\stm32f1xx_hal_rcc.o"
+"nema17\stm32f1xx_hal_rcc_ex.o"
+"nema17\stm32f1xx_hal_gpio.o"
+"nema17\stm32f1xx_hal_dma.o"
+"nema17\stm32f1xx_hal_cortex.o"
+"nema17\stm32f1xx_hal_pwr.o"
+"nema17\stm32f1xx_hal_flash.o"
+"nema17\stm32f1xx_hal_flash_ex.o"
+"nema17\stm32f1xx_hal_exti.o"
+"nema17\stm32f1xx_hal_i2c.o"
+"nema17\stm32f1xx_hal_tim.o"
+"nema17\stm32f1xx_hal_tim_ex.o"
+"nema17\system_stm32f1xx.o"
+"nema17\ds1307.o"
+"nema17\i2c-lcd.o"
+--strict --scatter "NEMA17\NEMA17.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "NEMA17.map" -o NEMA17\NEMA17.axf
